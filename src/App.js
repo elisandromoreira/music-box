@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import firebase from './utils/Firebase'
+import 'firebase/auth'
 
 function App() {
+
+  firebase.auth().onAuthStateChanged(currentUser => {
+    console.log(currentUser ? 'Estamos Logados' : 'Não Estamos Logados' )
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          App ElectronJs + ReactJS 
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <h1>App Electron + React</h1>
     </div>
   );
 }
