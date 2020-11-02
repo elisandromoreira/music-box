@@ -24,8 +24,9 @@
   &__box {
     position: relative;
     background-color: $background-grey-dark;
-    width: 500px;
+    max-width: 500px;
     z-index: 1;
+    margin: 0 30px;
     padding: 50px 70px;
     border-radius: 10px;
 

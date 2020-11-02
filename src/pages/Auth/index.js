@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 import AuthOptions from '../../components/Auth/AuthOptions'
 import RegisterForm from '../../components/Auth/RegisterForm'
